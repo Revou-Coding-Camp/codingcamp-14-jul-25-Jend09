@@ -1,3 +1,13 @@
+showWelcomePopup();
+
+function showWelcomePopup() {
+    let userName = prompt("Please enter yoyr name:");
+    if (userName != '') {
+        document.getElementById('welcome-user').innerHTML = userName;
+    }
+}
+
+
 document.getElementById('contact-form').addEventListener('submit', function(event) {
     event.preventDefault();
 
